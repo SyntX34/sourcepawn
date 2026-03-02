@@ -215,7 +215,10 @@ This release contains a number of language changes.
 
 SourcePawn 1.13 is currently in development.
 
-This release adds int64 as a new primitive data type for 64-bit arithmetic. Plugins using int64
-will require a newer SourcePawn VM to run.
-
-The x86 JIT will now only run on processors supporting SSE2 and higher.
+ - A new `int64` primitive type is available for 64-bit arithmetic. Plugins
+   using int64 will require a newer SourcePawn VM to run.
+ - The `float` type is now intrinsically supported, and `float.inc` is no
+   longer required for basic float support.
+ - Operator overload support has been removed due to lack of use.
+ - The x86 JIT will now only run on processors supporting SSE2 and higher.
+ - The .pubvars and .publics sections of SMX files are no longer sorted.
